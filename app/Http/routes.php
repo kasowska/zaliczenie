@@ -19,3 +19,5 @@ Route::get('/category/{id?}' , ['as' => 'category.get', 'uses' => 'CategoryContr
 Route::get('/article/{id?}' , ['as' => 'article.get', 'uses' => 'ArticleController@get']);
 
 Route::post('/category' , ['as' => 'category.post', 'uses' => 'CategoryController@create']);
+
+Route::post('/article' , ['as' => 'article.post', 'uses' => 'ArticleController@create']);
