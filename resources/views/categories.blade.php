@@ -1,7 +1,10 @@
+@extends('category')
+@section('content')
 <ul>  
 @foreach($categories as $category)
 <li><a href="{{route("category.get", ["id"=>$category->id])}}">{{$category->name}}</a></li>
  @endforeach
+ 
 </ul>
 <form method="POST">
     <span>Category name</span>
@@ -12,3 +15,4 @@
   
      
 </form>
+@stop
