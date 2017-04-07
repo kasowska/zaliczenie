@@ -6,16 +6,24 @@
     <li>{{$article->title}}</li>
     @endforeach
 </ul>
-<form method="POST" action="{{route("article.post")}}" class="from-horizontal">
-    <div class="input-group"></div>
-    <span>Title</span>
-    <input type="text" name="name" placeholder="Wpisz tytuł">
+<form method="POST" action="{{route("article.post")}}" class="category-form">
+    <div class="form-group">
+    <label>Title</label>
+    <input type="text" name="title" class="form-control" placeholder="Wpisz tytuł">
+   </div>
     <input type="hidden" name="token" value="{{csrf_token()}}">
+   
+    
     <br/>
-     <span>Content</span>
-    <textarea name="Content" placeholder="Wpisz treść artykułu" rows="3"></textarea>
-    <input type="hidden" name="token" value="{{csrf_token()}}">
-      <br/>
+    <div class="form-group">
+     <label>Content</label>
+    <br/>
+    <textarea name="content" class="form-control" placeholder="Wpisz treść artykułu" rows="3"></textarea>
+   
+    </div>
+     <br/>
+    <input type="hidden" name="category_id" value="{{$category->id}}">
+    <br/>
     <button type="submit">Add Article</button>
     <button type="reset">Cancel</button>
     </form>

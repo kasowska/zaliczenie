@@ -1,18 +1,16 @@
 body {
-    background: url('tlo.png') fixed;
+    background: url('351379.jpg') fixed;
         background-size: cover;
 }
 .main-menu {
     background: white;
-    padding: 15px;
-    width: 70vw;
-    margin: 0 auto 0 auto;
+    padding: 15px; 
     opacity: 0.6;
     cursor: pointer;
 
 }
 .main-menu ul {
-    margin: 0;
+    
     padding: 0;
     list-style: none;
 }
@@ -25,9 +23,7 @@ body {
 }
 .main-section {
      background: #a6e1ec;
-    padding: 15px;
-    width: 70vw;
-    margin: 0 auto 0 auto;
+    padding: 15px;  
     opacity: 0.6;
     cursor: pointer;
   
@@ -37,4 +33,7 @@ body {
 }
 .main-menu:hover {
     opacity: 1;
+}
+.category-form {
+    padding: 15px;
 }

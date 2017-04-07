@@ -7,12 +7,14 @@
  
 </ul>
 <form method="POST">
-    <span>Category name</span>
-    <input type="text" name="name" placeholder="...">
+    <div class="form-group">
+    <label>Category name</label>
+    <input type="text" name="name" class="form-control" placeholder="Wpisz nazwę kategorii...">
     <input type="hidden" name="token" value="{{csrf_token()}}">
+    <br/>
     <button type="submit">Add category</button>
     <button type="reset">Cancel</button>
-  
+    </div>
      
 </form>
 @stop
