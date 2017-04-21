@@ -1,10 +1,12 @@
 <!doctype html>
 <html>
     <head>
-        <title>Testowe</title> 
+        <title>ProjektSIN</title> 
         <meta charset="UTF-8"> 
         <link rel='stylesheet' href="{{asset('main.css')}}">
         <link rel='stylesheet' href="{{asset('css/bootstrap.min.css')}}">
+        <script src="{{asset('jquery-3.2.1.min.js')}}"></script>
+        <script src="{{asset('jquery.js')}}"></script>
     </head>
     <body class="conteiner-fluid">
         <div class="conteiner-fluid">
@@ -34,6 +36,8 @@
         
        
     </foother>
+    
+    <button id="bgChanger" type="button" class="btn btn-danger" onclick="changeBg('{{asset("tlo.jpeg")}}','{{asset("351379.jpg")}}')">change background</button>
     </body>
    
 </html>

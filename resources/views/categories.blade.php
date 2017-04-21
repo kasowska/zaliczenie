@@ -9,10 +9,10 @@
 <form method="POST">
     <div class="form-group">
     <label>Category name</label>
-    <input type="text" name="name" class="form-control" placeholder="Wpisz nazwę kategorii...">
+    <input type="text" id="name" name="name" class="form-control" placeholder="Wpisz nazwę kategorii..." onkeyup="validInput()">
     <input type="hidden" name="token" value="{{csrf_token()}}">
     <br/>
-    <button type="submit">Add category</button>
+    <button type="submit" disabled="true">Add category</button>
     <button type="reset">Cancel</button>
     </div>
      
