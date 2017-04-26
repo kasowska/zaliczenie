@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>ProjektSIN</title> 
+        <title>Adventures</title> 
         <meta charset="UTF-8"> 
         <link rel='stylesheet' href="{{asset('main.css')}}">
         <link rel='stylesheet' href="{{asset('css/bootstrap.min.css')}}">
