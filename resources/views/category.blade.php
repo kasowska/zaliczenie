@@ -7,6 +7,7 @@
     @endforeach
 </ul>
 <form method="POST" action="{{route("article.post")}}" class="category-form">
+    <div class="articles">
     <div class="form-group">
     <label>Title</label>
     <input type="text" name="title" class="form-control" placeholder="Wpisz tytuł">
@@ -24,9 +25,12 @@
      <br/>
     <input type="hidden" name="category_id" value="{{$category->id}}">
     <br/>
-    <button type="submit">Add Article</button>
-    <button type="reset">Cancel</button>
+    <button class="button-form" type="submit">Add Article</button>
+    <button class="button-form" type="reset">Cancel</button>
+    </div>
     </form>
+
+    
 
   
      @stop

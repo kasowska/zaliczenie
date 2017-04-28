@@ -9,6 +9,9 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
+
+
+
 body {
   margin: 0;
 }
@@ -2985,6 +2988,9 @@ select[multiple].input-lg {
     text-align: right;
   }
 }
+
+
+
 .form-horizontal .has-feedback .form-control-feedback {
   right: 15px;
 }

@@ -2,7 +2,7 @@
 @section('content')
 <ul>  
 @foreach($categories as $category)
-<li><a href="{{route("category.get", ["id"=>$category->id])}}">{{$category->name}}</a></li>
+<li><a href="{{route("category.get", ["id"=>$category->id])}}" id="category_position">{{$category->name}}</a></li>
  @endforeach
  
 </ul>
@@ -12,8 +12,8 @@
     <input type="text" id="name" name="name" class="form-control" placeholder="Wpisz nazwę kategorii..." onkeyup="validInput()">
     <input type="hidden" name="token" value="{{csrf_token()}}">
     <br/>
-    <button type="submit" disabled="true">Add category</button>
-    <button type="reset">Cancel</button>
+    <button class="button-form" type="submit" disabled>Add category</button>
+    <button class="button-form" type="reset">Cancel</button>
     </div>
      
 </form>
